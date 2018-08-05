@@ -12,8 +12,25 @@ const DOLEV_STATUSES = {
   8: 'בעמותה',
 };
 
+const CONTENT_TRANSLATION = {
+  'apple': 'תפוחים',
+  'avocado': 'אבוקדו',
+  'broccoli': 'ברוקולו',
+  'corn': 'תירס',
+  'eggplant': 'חצילים',
+  'mango': 'מנגו'
+};
+
+const getDolevContentByName = contentName =>
+  (CONTENT_TRANSLATION[contentName] ? contentName : 'not-available');
+
 const sortNumberByField = (field, a, b, order) => {
   const ascResult = (parseInt(a[field]) < parseInt(b[field]) ? -1 : 1);
+  return ((order === 'asc') ? 1 : -1) * ascResult;
+};
+
+const sortByDolevContent = (a, b, order) => {
+  const ascResult = ((CONTENT_TRANSLATION[a.content] || '' < CONTENT_TRANSLATION[b.content] || '') ? -1 : 1);
   return ((order === 'asc') ? 1 : -1) * ascResult;
 };
 
@@ -22,6 +39,15 @@ const textCell = (cell, row) => (
     <div className={`${CLASS_NAME}__text-cell`}>{cell}</div>
   </div>
 );
+
+const iconCell = (cell, row) => {
+  const dolevContent = getDolevContentByName(cell);
+  return (
+    <div className={`${CLASS_NAME}__cell`}>
+      <div className={`${CLASS_NAME}__icon-cell ${CLASS_NAME}__icon-cell--${dolevContent}`} title={CONTENT_TRANSLATION[dolevContent]}/>
+    </div>
+  );
+};
 
 const statusCell = (cell, row) => (
   <div className={`${CLASS_NAME}__cell`}>
@@ -41,7 +67,7 @@ const dolevColumns = [
   {
     name: "תכולה",
     dataField: 'content',
-    dataFormatter: textCell, // todo: iconCell
+    dataFormatter: iconCell,
     columnWidth: '20%'
   },
   {
@@ -62,7 +88,8 @@ const dolevColumns = [
     name: "סטטוס",
     dataField: 'status',
     dataFormatter: statusCell,
-    columnWidth: '84px' // todo: sort by hebrew name
+    columnWidth: '84px',
+    sortFunction: sortNumberByField.bind(null, 'status')
   }
 ];
 
