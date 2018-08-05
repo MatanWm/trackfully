@@ -19,5 +19,8 @@
     "start-js": "react-scripts start",
     "build-js": "react-scripts build"
   },
+  "devDependencies": {
+    "babel-eslint": "7.2.3"
+  },
   "proxy": "http://server:8080"
 }

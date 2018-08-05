@@ -1,0 +1,14 @@
+{
+  "eslint.enable": true,
+  "eslint.options": {
+    "configFile": ".eslintrc.js"
+  },
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 120
+}

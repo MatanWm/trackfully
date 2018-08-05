@@ -20,7 +20,7 @@ class App extends Component {
 
     window._resp = resp;
 
-    let text = await resp.text();
+    const text = await resp.text();
 
     let data = null;
     try {
