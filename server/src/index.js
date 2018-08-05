@@ -2,6 +2,7 @@
 
 const express = require('express');
 const path = require('path');
+const routes = require('./routes');
 
 // Constants
 const PORT = process.env.PORT || 8080;
@@ -23,6 +24,8 @@ app.get('/api', (req, res) => {
   };
   res.send(JSON.stringify(data, null, 2));
 });
+
+app.use('/api', routes);
 
 // All remaining requests return the React app, so it can handle routing.
 app.get('*', function(request, response) {
