@@ -7,18 +7,13 @@ mongoose.connect(
 
 const { Schema } = mongoose;
 
-const DolevStatusSchema = new Schema({
-  from: { type: String, default: '' },
-  to: { type: String, default: '' },
-});
-
 const DolevSchema = new Schema({
   id: { type: String, default: '' },
   lastModified: { type: String, default: '' },
   lastModifier: { type: String, default: '' },
   content: { type: String, default: '' },
   lastFarmerName: { type: String, default: '' },
-  status: { type: Object, default: {} },
+  status: { type: Number, default: 0 },
 });
 
 module.exports = mongoose.model('Dolev', DolevSchema);
