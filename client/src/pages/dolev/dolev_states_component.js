@@ -14,7 +14,7 @@ class DolevStates extends React.Component {
                 <Link to="dolev/pick-up">
                     <div className="rectangle-3" style={divStyle1}>
                         <div style={divStyle2}>יציאה לאיסוף</div>
-                        <div style={divStyle3} ></div>
+                        <div className="truck" style={divStyle3} ></div>
                     </div>
                 </Link>
                 <Link to="dolev/pick-up">
