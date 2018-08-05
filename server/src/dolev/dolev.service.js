@@ -1,15 +1,3 @@
-class DolevService {
-  static async getDolevById(dolevId) {
-    return Promise.resolve({
-      dolevId: 'matan7',
-    });
-  }
-
-  static async getAllDolevs() {
-    return Promise.resolve(allDolevs);
-  }
-}
-
 const allDolevs = [
   {
     id: 1,
@@ -63,5 +51,17 @@ const statuses = {
   7: 'onTheWayToAssociation',
   8: 'ArrivedToAssociation',
 };
+
+class DolevService {
+  static async getDolevById(dolevId) {
+    return Promise.resolve({
+      dolevId: 'matan7',
+    });
+  }
+
+  static async getAllDolevs() {
+    return Promise.resolve(allDolevs);
+  }
+}
 
 module.exports = DolevService;
