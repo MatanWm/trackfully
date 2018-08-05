@@ -22,8 +22,31 @@ const allDolevs = [
     status: 0,
     location: {
       lat: 0, lng: 0
+    }
+  },
+  {
+    id: 2,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['cucumbers'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: 0,
+    location: {
+      lat: 0, lng: 0
     },
-    merlogId: 1
+  },
+  {
+    id: 2,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: 1,
+    location: {
+      lat: 0, lng: 0
+    },
   }
 ];
 
