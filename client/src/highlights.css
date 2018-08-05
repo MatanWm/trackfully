@@ -20,7 +20,7 @@
 .fridge {
     display: block;
     text-indent: -9999px;
-    background: url('fridge.svg');
+    background: url('assets/status/fridge.svg');
     width: 48px;
     height: 48px;
     background-size: 48px 48px;
@@ -31,7 +31,7 @@
 .wheat {
     display: block;
     text-indent: -9999px;
-    background: url('wheat.svg');
+    background: url('assets/status/wheat.svg');
     width: 48px;
     height: 48px;
     background-size: 48px 48px;
@@ -42,7 +42,7 @@
 .dolev {
     display: block;
     text-indent: -9999px;
-    background: url('dolev.svg');
+    background: url('assets/status/dolev.svg');
     width: 48px;
     height: 48px;
     background-size: 48px 48px;
@@ -53,7 +53,7 @@
 .amuta {
     display: block;
     text-indent: -9999px;
-    background: url('amuta.svg');
+    background: url('assets/status/amuta.svg');
     width: 48px;
     height: 48px;
     background-size: 48px 48px;

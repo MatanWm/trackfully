@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>2BED4391-4EC4-495D-9E63-7DA6C8D5472C-511-0000A6430AAAE63E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M7.09435615,18.3198574 C8.44903985,19.3729184 10.1512885,20 12,20 C16.418278,20 20,16.418278 20,12 C20,10.1512885 19.3729184,8.44903985 18.3198574,7.09435615 L7.09435615,18.3198574 Z M5.68014258,16.9056439 L16.9056439,5.68014258 C15.5509601,4.62708161 13.8487115,4 12,4 C7.581722,4 4,7.581722 4,12 C4,13.8487115 4.62708161,15.5509601 5.68014258,16.9056439 Z M12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Backoffice" transform="translate(-819.000000, -676.000000)">
+            <g id="Highlights" transform="translate(439.000000, 86.000000)">
+                <g id="Group-3-Copy-4" transform="translate(20.000000, 125.000000)">
+                    <g id="mini-chart" transform="translate(0.000000, 29.000000)">
+                        <g id="Content" transform="translate(356.623684, 16.000000)">
+                            <g id="Icon/Exception-Copy-3" transform="translate(4.000000, 420.000000)">
+                                <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Combined-Shape" opacity="0.55" fill-rule="nonzero"></g>
+                                <g id="↳-🎨Color" mask="url(#mask-2)" fill="#78868F">
+                                    <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
