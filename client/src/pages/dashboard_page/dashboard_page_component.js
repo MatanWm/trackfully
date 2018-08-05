@@ -13,7 +13,7 @@ const Header = () => (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <ul className="navbar-nav">
         <li className="navbar-brand">
-          <Link className="nav-link " to="/backoffice/admin/new">
+          <Link className="nav-link " to="/">
             <img src={'./assets/img/leket_logo.png'} />
           </Link>
         </li>
@@ -28,7 +28,7 @@ class DashboardPage extends React.Component {
     super();
 
     this.state = {
-      dolevs: null
+      dolevs: null,
     };
   }
 
@@ -44,7 +44,7 @@ class DashboardPage extends React.Component {
 
     const { dolevs } = this.state;
     // todo: add spinner
-    if (!dolevs) return (<div>בטעינה</div>);
+    if (!dolevs) return <div>בטעינה</div>;
 
     return (
       <div className="container-fluid dashboard-page">
