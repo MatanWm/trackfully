@@ -27,17 +27,25 @@ class DashboardPage extends React.Component {
   constructor() {
     super();
 
-    this.state = {};
+    this.state = {
+      dolevs: null
+    };
   }
 
   componentDidMount() {
     axios.get('http://localhost:8080/api/dolev').then((res) => {
-      const dolves = res.data;
-      this.setState({ dolves });
+      const dolevs = res.data;
+      this.setState({ dolevs });
     });
   }
 
   render() {
+    console.log(this.state.dolevs);
+
+    const { dolevs } = this.state;
+    // todo: add spinner
+    if (!dolevs) return (<div>בטעינה</div>);
+
     return (
       <div className="container-fluid dashboard-page">
         <Header />
