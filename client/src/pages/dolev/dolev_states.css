@@ -7,14 +7,8 @@
   opacity: 0.4;
 }
 
-.dolev {
-  background: url('../../dolev.svg');
-  background-size: 645px;
-}
-
 .truck {
   height: 48px;
   width: 48px;
-  background: url('../../truck.svg');
   background-size: 45px 45px;
 }
