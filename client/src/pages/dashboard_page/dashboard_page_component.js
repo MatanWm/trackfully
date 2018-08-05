@@ -44,7 +44,7 @@ class DashboardPage extends React.Component {
   }
 
   render() {
-    const { dolevs } = this.state;
+    const { dolevs, statusFilter } = this.state;
     // todo: add spinner
     if (!dolevs) return <div>בטעינה</div>;
     return (
@@ -52,7 +52,7 @@ class DashboardPage extends React.Component {
         <div>Hello Trackfully</div>
         {this.state.dolevs ?
           <DashboardHighlights class={'col-lg-12'} dolevs={this.state.dolevs} onHighlightClick= {this.onHighlightClick.bind(this)}/> : ''}
-        <DolevsList />
+        <DolevsList statusFilter = {statusFilter}/>
       </div>
     );
   }
