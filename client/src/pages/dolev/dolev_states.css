@@ -1,13 +1,20 @@
-
-.rectangle-2 {	
-    height: 720px;
-    width: 360px;
-    background-color: #F9FAFB;
+.dolev-stats {
+  text-align: center;
 }
 
-.rectangle-3 {	
-    height: 107px;
-    width: 320px;
-    border: 1px solid rgba(0,0,0,0.06);
-    background-color: #FFFFFF;
+.list-group-item:hover {
+  background-color: blue;
+  opacity: 0.4;
+}
+
+.dolev {
+  background: url('../../dolev.svg');
+  background-size: 645px;
+}
+
+.truck {
+  height: 48px;
+  width: 48px;
+  background: url('../../truck.svg');
+  background-size: 45px 45px;
 }
