@@ -7,7 +7,7 @@ const FRIDGE_STATUS = 6;
 const ASSOCIATION_STATUS = 8;
 
 const DashboardHighlights = (props) => {
-  const { dolevs } = props
+  const { dolevs } = props;
   return (
     <div className='hilights-block'>
       <Highlight name='דולבים פנויים'

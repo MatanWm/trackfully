@@ -11,15 +11,3 @@
     border: 1px solid rgba(0,0,0,0.06);
     background-color: #FFFFFF;
 }
-
-.dolev {
-    background: url('../../dolev.svg');
-    background-size: 645px;
-}
-
-.truck {	
-    height: 48px;
-    width: 48px;
-    background: url('../../truck.svg');
-    background-size: 45px 45px;
-}
