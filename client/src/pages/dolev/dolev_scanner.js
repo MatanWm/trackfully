@@ -1,6 +1,7 @@
 import React from 'react'
 import QrReader from 'react-qr-reader'
 import axios from 'axios';
+import './dolev_scanner.css';
 
 
 
@@ -10,17 +11,16 @@ class DolevScanner extends React.Component {
         this.state = {
           success: false,
           delay: 1000,
-          result: 'No result',
-
+          dolevId: null
         };
         this.handleScan = this.handleScan.bind(this)
       }
     render(){
-        const isSuccess = this.state.success;
+        const dolevId = this.state.dolevId;
         return (
             <div>
-                {isSuccess ? 
-                (<div>דולב נסרק בהצלחה</div>)
+                {dolevId ? 
+                (<div className="success-scan success-text">דולב {dolevId} נסרק בהצלחה</div>)
                 :
                 (<div>
                     <QrReader
@@ -38,11 +38,9 @@ class DolevScanner extends React.Component {
 
     async handleScan(data){
         if(data){
-            console.log(data);
             const res = await axios.patch(`http://localhost:8080/api/dolev/${data}`, {status:this.props.status}); 
-            //console.log(res);
             this.setState({
-                success: true,
+                dolevId: data,
             })
         }
       }
