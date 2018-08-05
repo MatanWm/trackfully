@@ -39,9 +39,9 @@ class DashboardPage extends React.Component {
 
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid dashboard-page">
         <Header />
-        <DashboardHighlights />
+        <DashboardHighlights class={'col-lg-12'} />
         <DolevsList />
         <DolevsStatus dolevs={this.state.dolevs} />
       </div>

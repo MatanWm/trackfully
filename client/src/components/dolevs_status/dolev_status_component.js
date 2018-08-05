@@ -3,7 +3,7 @@ import React from 'react';
 const CLASS_NAME = 'dolevs-list';
 
 const DolevsList = () => (
-  <div className="col-lg-6">
+  <div className={CLASS_NAME}>
     <div>Hello DolevsList</div>
   </div>
 );
