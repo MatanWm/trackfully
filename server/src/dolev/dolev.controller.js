@@ -15,11 +15,10 @@ class DolevController {
       .catch(e => next(e));
   }
   static updateDolevStatus(req, res, next) {
-    console.log(req.data);
     return dolevService
-    .updateDolevStatus(req.params.dolevId,req.body.status)
-    .then(data => res.json(data))
-    .catch(e => next(e));
+      .updateDolevStatus(req.params.dolevId, req.body.status)
+      .then(data => res.json(data))
+      .catch(e => next(e));
   }
 }
 
