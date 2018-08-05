@@ -50,9 +50,11 @@ class DashboardPage extends React.Component {
     return (
         <div className="container-fluid dashboard-page">
         <div>Hello Trackfully</div>
-        {this.state.dolevs ?
-          <DashboardHighlights class={'col-lg-12'} dolevs={this.state.dolevs} onHighlightClick= {this.onHighlightClick.bind(this)}/> : ''}
-        <DolevsList statusFilter = {statusFilter}/>
+        <DashboardHighlights class={'col-lg-12'}
+                             dolevs={dolevs}
+                             onHighlightClick={this.onHighlightClick.bind(this)} />
+        <DolevsList dolevs={dolevs}
+                    statusFilter={statusFilter}/>
       </div>
     );
   }

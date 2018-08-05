@@ -1,0 +1,69 @@
+/*!* Override react bootstrap table *!*/
+
+/*.react-bs-table table {*/
+  /*table-layout: fixed;*/
+/*}*/
+
+/*.react-bs-table table td {*/
+  /*overflow: hidden;*/
+  /*white-space: nowrap;*/
+  /*text-overflow: ellipsis;*/
+/*}*/
+
+.dolevs-list__header {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.dolevs-list__row {
+  height: 47px;
+  border-bottom: solid grey 1px;
+}
+
+.dolevs-list__row:last-child {
+  border-width: 0;
+}
+
+.dolevs-list__column-header {
+  white-space: pre;
+}
+
+.dolevs-list__status-cell {
+  border-radius: 20px;
+  height: 25px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ready */
+.dolevs-list__status-cell--0 {
+  background-color: rgba(68,188,103,0.26);
+  color: #01CC74;
+}
+
+/* in field */
+.dolevs-list__status-cell--1 {
+  background-color: rgba(255,139,50,0.25);
+  color: #FF8300;
+}
+
+/* in fridge */
+.dolevs-list__status-cell--6 {
+  background-color: rgba(75,186,250,0.25);
+  color: #25B3FD;
+}
+
+/* in association */
+.dolevs-list__status-cell--7 {
+  background-color: rgba(243,67,238,0.25);
+  color: #FF00EA;
+}
+
+/* in association */
+.dolevs-list__status-cell--8 {
+  background-color: rgba(243,67,238,0.25);
+  color: #FF00EA;
+}
