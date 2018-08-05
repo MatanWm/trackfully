@@ -1,46 +1,6 @@
-const allDolevs = [
-  {
-    id: 1,
-    lastModified: new Date('1/1/1970'),
-    lastModifier: '',
-    content: ['apples', 'oranges'],
-    pickDate: new Date('1/1/1970'),
-    lastFarmerName: 'srulik',
-    status: 0,
-    location: {
-      lat: 0,
-      lng: 0,
-    },
-  },
-  {
-    id: 2,
-    lastModified: new Date('1/1/1970'),
-    lastModifier: '',
-    content: ['cucumbers'],
-    pickDate: new Date('1/1/1970'),
-    lastFarmerName: 'srulik',
-    status: 0,
-    location: {
-      lat: 0,
-      lng: 0,
-    },
-  },
-  {
-    id: 2,
-    lastModified: new Date('1/1/1970'),
-    lastModifier: '',
-    content: ['apples', 'oranges'],
-    pickDate: new Date('1/1/1970'),
-    lastFarmerName: 'srulik',
-    status: 1,
-    location: {
-      lat: 0,
-      lng: 0,
-    },
-  },
-];
+const DolevModel = require('./dolev.model.js');
 
-const statuses = {
+const status = {
   0: 'ready',
   1: 'inField',
   2: 'sentFromField',
@@ -53,14 +13,18 @@ const statuses = {
 };
 
 class DolevService {
-  static async getDolevById(dolevId) {
-    return Promise.resolve({
-      dolevId: 'matan7',
-    });
+  static getDolevById(id) {
+    return DolevModel.find({ id });
   }
 
-  static async getAllDolevs() {
-    return Promise.resolve(allDolevs);
+  static getAllDolevs() {
+    return DolevModel.find();
+  }
+
+  static async updateDolevStatus(dolev) {
+    const doc = await DolevModel.find({ id: dolev.id });
+    // / change and save speak to matan
+    return doc;
   }
 }
 

@@ -1,0 +1,98 @@
+module.exports = [
+  {
+    id: 1,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מושב אליפלט',
+      to: 'מרלוג',
+    },
+  },
+  {
+    id: 2,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['cucumbers'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מושב אליפלט',
+      to: 'מרלוג',
+    },
+  },
+  {
+    id: 3,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מושב אליפלט',
+      to: 'מרלוג',
+    },
+  },
+  {
+    id: 4,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מושב אליפלט',
+      to: 'עמותת השחר הלבן',
+    },
+  },
+  {
+    id: 5,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מרלוג',
+      to: 'מושב אליפלט',
+    },
+  },
+  {
+    id: 12,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מרלוג',
+      to: 'עמותת אור השרוני',
+    },
+  },
+  {
+    id: 33,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מרלוג',
+      to: 'עמותת מעגן מיכאל',
+    },
+  },
+  {
+    id: 333,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מושב אליפלט',
+      to: 'מרלוג',
+    },
+  },
+];

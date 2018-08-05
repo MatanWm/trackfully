@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 import DashboardHighlights from '../../components/dashboard_highlights/dashboard_highlights_component';
 import DolevsList from '../../components/dolevs_list/dolevs_list_component';
-import DolevsStatus from '../../components/dolevs_status/dolev_status_component';
 
 import './dashboard_page.css';
 
@@ -14,7 +13,7 @@ const Header = () => (
       <ul className="navbar-nav">
         <li className="navbar-brand">
           <Link className="nav-link " to="/">
-            <img src={'./assets/img/leket_logo.png'} />
+            <img alt="" src={'./assets/img/leket_logo.png'} />
           </Link>
         </li>
       </ul>
@@ -40,8 +39,6 @@ class DashboardPage extends React.Component {
   }
 
   render() {
-    console.log(this.state.dolevs);
-
     const { dolevs } = this.state;
     // todo: add spinner
     if (!dolevs) return <div>בטעינה</div>;
@@ -51,7 +48,6 @@ class DashboardPage extends React.Component {
         <Header />
         <DashboardHighlights class={'col-lg-12'} />
         <DolevsList />
-        <DolevsStatus dolevs={this.state.dolevs} />
       </div>
     );
   }

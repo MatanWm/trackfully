@@ -1,5 +1,5 @@
-import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import DashboardPage from '../../../pages/dashboard_page/dashboard_page_component';
 import UpdateDolev from '../../../pages/dolev/update_dolev_component';
 import DolevStates from '../../../pages/dolev/dolev_states_component';
@@ -18,4 +18,4 @@ const Main = () => (
   </main>
 );
 
-export default Main
+export default Main;

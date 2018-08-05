@@ -1,9 +1,9 @@
-
-
 const express = require('express');
 const path = require('path');
 const routes = require('./routes');
 const cors = require('cors');
+const DolevModel = require('./dolev/dolev.model');
+const DolevMocks = require('./dolev/dolev.mocks');
 
 // Constants
 const PORT = process.env.PORT || 8080;
@@ -15,8 +15,16 @@ const CLIENT_BUILD_PATH = path.join(__dirname, '../../client/build');
 const app = express();
 
 app.use(cors());
-// Static files
+
 app.use(express.static(CLIENT_BUILD_PATH));
+
+// Db reset
+app.use('/dbreset', async (req, res) => {
+  await DolevModel.deleteMany();
+
+  await DolevModel.insertMany(DolevMocks);
+  res.send('done');
+});
 
 app.use('/api', routes);
 
