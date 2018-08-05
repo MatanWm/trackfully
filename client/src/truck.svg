@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>7E785121-372D-468C-BF17-CDE5E3426E70</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pixel-2-XL" transform="translate(-207.000000, -114.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(20.000000, 84.000000)">
+                <g id="Group-3" transform="translate(85.000000, 30.000000)">
+                    <g id="Group-4" transform="translate(126.000000, 24.000000) scale(-1, 1) translate(-126.000000, -24.000000) translate(102.000000, 0.000000)">
+                        <path d="M0.5,36.5 L31.5,36.5 L31.5,8 C31.5,7.17157288 30.8284271,6.5 30,6.5 L2,6.5 C1.17157288,6.5 0.5,7.17157288 0.5,8 L0.5,36.5 Z" id="Rectangle-7" stroke="#78868F"></path>
+                        <path d="M31.5,36.5 L47.4104679,36.5 L47.4984135,27.9023063 L40.1332178,17.1522012 C39.8535569,16.7440132 39.3905867,16.5 38.8957861,16.5 L33,16.5 C32.1715729,16.5 31.5,17.1715729 31.5,18 L31.5,36.5 Z" id="Rectangle-7-Copy" stroke="#78868F"></path>
+                        <path d="M34.5,26.5 L45.9882078,26.5 L41.0855444,20.0888248 C40.8017404,19.7176965 40.3612132,19.5 39.8940077,19.5 L36,19.5 C35.1715729,19.5 34.5,20.1715729 34.5,21 L34.5,26.5 Z" id="Rectangle-7-Copy" stroke="#78868F"></path>
+                        <rect id="Rectangle-8" fill="#78868F" x="1" y="10" width="30" height="1"></rect>
+                        <rect id="Rectangle-8-Copy-4" fill="#78868F" x="1" y="22" width="30" height="1"></rect>
+                        <rect id="Rectangle-8-Copy" fill="#78868F" x="1" y="33" width="4" height="1"></rect>
+                        <rect id="Rectangle-8-Copy-2" fill="#78868F" x="1" y="33" width="47" height="3"></rect>
+                        <rect id="Rectangle-8-Copy-3" fill="#78868F" x="44" y="33" width="4" height="1"></rect>
+                        <path d="M3,6.5 L4.5,6.5 L4.5,33.5 L0.5,33.5 L0.5,9 C0.5,7.61928813 1.61928813,6.5 3,6.5 Z" id="Rectangle-5" stroke="#78868F" fill="#FFFFFF"></path>
+                        <rect id="Rectangle-5-Copy-2" stroke="#78868F" fill="#FFFFFF" x="13.5" y="6.5" width="4" height="27"></rect>
+                        <path d="M27.5,6.5 L29,6.5 C30.3807119,6.5 31.5,7.61928813 31.5,9 L31.5,33.5 L27.5,33.5 L27.5,6.5 Z" id="Rectangle-5-Copy" stroke="#78868F" fill="#FFFFFF"></path>
+                        <circle id="Oval" stroke="#78868F" fill="#FFFFFF" cx="11" cy="37" r="4.5"></circle>
+                        <circle id="Oval" stroke="#78868F" fill="#FFFFFF" cx="38" cy="37" r="4.5"></circle>
+                        <circle id="Oval-2" fill="#78868F" cx="11" cy="37" r="1"></circle>
+                        <circle id="Oval-2" fill="#78868F" cx="38" cy="37" r="1"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
