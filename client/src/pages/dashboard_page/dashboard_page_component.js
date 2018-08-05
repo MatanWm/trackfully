@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import DashboardHighlights from '../../components/dashboard_highlights/dashboard_highlights_component';
 import DolevsList from '../../components/dolevs_list/dolevs_list_component';
 import './dashboard_page.css';
@@ -13,4 +13,4 @@ const DashboardPage = () => (
   </div>
 );
 
-export default DashboardPage
+export default DashboardPage;
