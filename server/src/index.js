@@ -15,15 +15,14 @@ const CLIENT_BUILD_PATH = path.join(__dirname, '../../client/build');
 const app = express();
 
 app.use(cors());
-// Static files
+
 app.use(express.static(CLIENT_BUILD_PATH));
 
-app.use('/matan7', async (req, res, next) => {
-  const result = await DolevModel.find({ id: 1 });
-  if (result.length === 0) {
-    const result2 = await DolevModel.insertMany(DolevMocks);
-    console.log(result2);
-  }
+// Db reset
+app.use('/dbreset', async (req, res) => {
+  await DolevModel.deleteMany();
+
+  await DolevModel.insertMany(DolevMocks);
   res.send('done');
 });
 
