@@ -18,7 +18,7 @@ class DolevScanner extends React.Component {
     render(){
         const dolevId = this.state.dolevId;
         return (
-            <div>
+            <div className="container">
                 {dolevId ? 
                 (<div className="success-scan success-text">דולב {dolevId} נסרק בהצלחה</div>)
                 :
