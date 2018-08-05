@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import TrackfullyBackofficeApp from './components/Trackfully_backoffice_app/trackfully_backoffice_app_component';
 import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render((
+  <BrowserRouter>
+    <TrackfullyBackofficeApp />
+  </BrowserRouter>
+), document.getElementById('root'));
 registerServiceWorker();
