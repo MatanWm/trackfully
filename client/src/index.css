@@ -3,3 +3,21 @@
 body {
     direction: rtl;
 }
+
+.leket-logo {
+    background: #FFFFFF;
+}
+
+.back {
+    background: #F9FAFB;
+}
+
+.cont {
+    background: white;
+    border: 1px;
+    height: 100vh;
+}
+
+#root{
+    height: 100%
+}

@@ -3,12 +3,16 @@
     width: 200px;
     display: inline-flex;
     cursor: pointer;
-    margin-left: 200px;
+    float: right;
 }
 
 .hilights-block {
     background-color: #FFFFFF;
     direction: rtl;
+    float: right;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hilights-description {

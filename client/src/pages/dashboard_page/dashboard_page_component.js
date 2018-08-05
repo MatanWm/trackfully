@@ -8,8 +8,8 @@ import DolevsList from '../../components/dolevs_list/dolevs_list_component';
 import './dashboard_page.css';
 
 const Header = () => (
-  <div className="container-fluid">
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <div className="container-fluid leket-logo">
+    <nav className="navbar navbar-expand-lg leket-logo">
       <ul className="navbar-nav">
         <li className="navbar-brand">
           <Link className="nav-link " to="/">
@@ -49,7 +49,7 @@ class DashboardPage extends React.Component {
     // todo: add spinner
     if (!dolevs) return <div>בטעינה</div>;
     return (
-      <div className="container-fluid dashboard-page">
+      <div className="container dashboard-page cont">
         <Header />
         <DashboardHighlights
           class={'col-lg-12'}
