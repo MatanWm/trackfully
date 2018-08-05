@@ -1,11 +1,11 @@
 import React from 'react';
 
-const CLASS_NAME = 'dolevs-list';
+const CLASS_NAME = 'dolevs-status';
 
-const DolevsList = () => (
+const DolevsStatus = () => (
   <div className={CLASS_NAME}>
-    <div>Hello DolevsList</div>
+    <div>Hello dolev status</div>
   </div>
 );
 
-export default DolevsList;
+export default DolevsStatus;
