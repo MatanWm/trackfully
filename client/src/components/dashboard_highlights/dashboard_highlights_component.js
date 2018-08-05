@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const CLASS_NAME = 'Dashboard-highlights';
 
@@ -8,4 +8,4 @@ const DashboardHighlights = () => (
   </div>
 );
 
-export default DashboardHighlights
+export default DashboardHighlights;

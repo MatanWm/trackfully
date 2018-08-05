@@ -6,10 +6,9 @@ const allDolevs = [
     content: ['apples', 'oranges'],
     pickDate: new Date('1/1/1970'),
     lastFarmerName: 'srulik',
-    status: 0,
-    location: {
-      lat: 0,
-      lng: 0,
+    status: {
+      from: 'מושב אליפלט',
+      to: 'מרלוג',
     },
   },
   {
@@ -19,23 +18,85 @@ const allDolevs = [
     content: ['cucumbers'],
     pickDate: new Date('1/1/1970'),
     lastFarmerName: 'srulik',
-    status: 0,
+    status: {
+      from: 'מושב אליפלט',
+      to: 'מרלוג',
+    },
     location: {
       lat: 0,
       lng: 0,
     },
   },
   {
-    id: 2,
+    id: 3,
     lastModified: new Date('1/1/1970'),
     lastModifier: '',
     content: ['apples', 'oranges'],
     pickDate: new Date('1/1/1970'),
     lastFarmerName: 'srulik',
-    status: 1,
-    location: {
-      lat: 0,
-      lng: 0,
+    status: {
+      from: 'מושב אליפלט',
+      to: 'מרלוג',
+    },
+  },
+  {
+    id: 4,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מושב אליפלט',
+      to: 'עמותת השחר הלבן',
+    },
+  },
+  {
+    id: 5,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מרלוג',
+      to: 'מושב אליפלט',
+    },
+  },
+  {
+    id: 12,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מרלוג',
+      to: 'עמותת אור השרוני',
+    },
+  },
+  {
+    id: 33,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מרלוג',
+      to: 'עמותת מעגן מיכאל',
+    },
+  },
+  {
+    id: 333,
+    lastModified: new Date('1/1/1970'),
+    lastModifier: '',
+    content: ['apples', 'oranges'],
+    pickDate: new Date('1/1/1970'),
+    lastFarmerName: 'srulik',
+    status: {
+      from: 'מושב אליפלט',
+      to: 'מרלוג',
     },
   },
 ];
