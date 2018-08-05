@@ -19,7 +19,7 @@ const DashboardHighlights = (props) => {
                  iconName = 'wheat'
                  buttonClass='badge badge-warning'
                  numOfDolevs={dolevs.filter(dolev => dolev.status === IN_FIELD_STATUS).length}
-                 handleHighlightClick={() => props.onHighlightClick(IDLE_STATUS)}/>
+                 handleHighlightClick={() => props.onHighlightClick(IN_FIELD_STATUS)}/>
       <Highlight name='בקירור'
                  iconName='fridge'
                  buttonClass='badge badge-info'
@@ -29,7 +29,7 @@ const DashboardHighlights = (props) => {
                  iconName = 'amuta'
                  buttonClass='badge badge-primary'
                  numOfDolevs={dolevs.filter(dolev => dolev.status === ASSOCIATION_STATUS).length}
-                 handleHighlightClick={() => props.onHighlightClick('ASSOCIATION_STATUS')}/>
+                 handleHighlightClick={() => props.onHighlightClick(ASSOCIATION_STATUS)}/>
     </div>
   );
 };
