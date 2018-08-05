@@ -6,22 +6,41 @@ import { Link } from 'react-router-dom';
 class DolevStates extends React.Component {
 
     render(){
+        const divStyle1 = {width: '100%', overflow: 'hidden'};
+        const divStyle2 = {width: '600px', float: 'left'};
+        const divStyle3 = {marginLeft: '620px'};
         return(
             <div className="rectangle-2">
                 <Link to="dolev/pick-up">
-                    <div style="width: 100%; overflow: hidden;">
-                        <div style="width: 600px; float: left;">יציאה לאיסוף</div>
-                        <div style="margin-left: 620px;" className="rectangle-3 truck"></div>
+                    <div className="rectangle-3" style={divStyle1}>
+                        <div style={divStyle2}>יציאה לאיסוף</div>
+                        <div style={divStyle3} ></div>
                     </div>
                 </Link>
-                <Link to="dolev/marlog"><div className="rectangle-3 truck"></div></Link>
-                <Link to="dolev/marlog"><div className="rectangle-3 truck"></div></Link>
-                <Link to="dolev/marlog"><div className="rectangle-3 truck"></div></Link>
-                <Link to="dolev/marlog"><div className="rectangle-3 truck"></div></Link>
-                <div className="rectangle-3"><a href="/dolev/field">איסוף תוצרת</a></div>
-                <div className="rectangle-3"><a href="/dolev/freeze">אכסון וקירור</a></div>
-                <div className="rectangle-3"><a href="/dolev/freeze">מסירה לעמותה</a></div>
-                <div className="rectangle-3"><a href="/dolev/freeze">סימון דולב פנוי</a></div>
+                <Link to="dolev/pick-up">
+                    <div className="rectangle-3" style={divStyle1}>
+                        <div style={divStyle2}>יציאה תוצרת</div>
+                        <div style={divStyle3}></div>
+                    </div>
+                </Link>
+                <Link to="dolev/pick-up">
+                    <div className="rectangle-3" style={divStyle1}>
+                        <div style={divStyle2}>יציאה וקירור</div>
+                        <div style={divStyle3} ></div>
+                    </div>
+                </Link>
+                <Link to="dolev/pick-up">
+                    <div className="rectangle-3" style={divStyle1}>
+                        <div style={divStyle2}>יציאה לעמותה</div>
+                        <div style={divStyle3} ></div>
+                    </div>
+                </Link>
+                <Link to="dolev/pick-up">
+                    <div className="rectangle-3" style={divStyle1}>
+                        <div style={divStyle2}>יציאה פנוי</div>
+                        <div style={divStyle3}></div>
+                    </div>
+                </Link>
             </div>
         );
     }
