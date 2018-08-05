@@ -7,6 +7,7 @@ module.exports = [
     pickDate: new Date('8/5/2018'),
     lastFarmerName: 'srulik',
     status: 0,
+    quantity: 100
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ module.exports = [
     pickDate: new Date('8/4/2018'),
     lastFarmerName: 'srulik',
     status: 0,
+    quantity: 100
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ module.exports = [
     pickDate: new Date('8/4/2018'),
     lastFarmerName: 'srulik',
     status: 1,
+    quantity: 100
   },
   {
     id: 4,
@@ -33,7 +36,8 @@ module.exports = [
     content: 'oranges',
     pickDate: new Date('8/4/2018'),
     lastFarmerName: 'srulik',
-    status: 6
+    status: 6,
+    quantity: 100
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ module.exports = [
     pickDate: new Date('8/4/2018'),
     lastFarmerName: 'srulik',
     status: 0,
+    quantity: 300
   },
   {
     id: 12,
@@ -52,6 +57,7 @@ module.exports = [
     pickDate: new Date('8/1/2018'),
     lastFarmerName: 'srulik',
     status: 8,
+    quantity: 300
   },
   {
     id: 33,
@@ -61,6 +67,7 @@ module.exports = [
     pickDate: new Date('8/5/2018'),
     lastFarmerName: 'srulik',
     status: 6,
+    quantity: 200
   },
   {
     id: 333,
@@ -69,6 +76,7 @@ module.exports = [
     content: 'apples',
     pickDate: new Date('8/4/2018'),
     lastFarmerName: 'srulik',
-    status: 1
+    status: 1,
+    quantity: 200
   },
 ];

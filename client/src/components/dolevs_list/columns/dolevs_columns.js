@@ -12,6 +12,11 @@ const DOLEV_STATUSES = {
   8: 'בעמותה',
 };
 
+const sortNumberByField = (field, a, b, order) => {
+  const ascResult = (parseInt(a[field]) < parseInt(b[field]) ? -1 : 1);
+  return ((order === 'asc') ? 1 : -1) * ascResult;
+};
+
 const textCell = (cell, row) => (
   <div className={`${CLASS_NAME}__cell`}>
     <div className={`${CLASS_NAME}__text-cell`}>{cell}</div>
@@ -30,31 +35,34 @@ const dolevColumns = [
     isKey: true,
     dataField: 'id',
     dataFormatter: textCell,
-    columnWidth: '40%'
+    columnWidth: '40%',
+    sortFunction: sortNumberByField.bind(null, 'id')
   },
   {
     name: "תכולה",
     dataField: 'content',
     dataFormatter: textCell, // todo: iconCell
-    columnWidth: '15%'
+    columnWidth: '20%'
   },
   {
     name: "כמות",
     dataField: 'quantity',
     dataFormatter: textCell,
-    columnWidth: '15%'
+    columnWidth: '20%',
+    sortFunction: sortNumberByField.bind(null, 'quantity')
   },
   {
     name: "זמן מאז\nהשינוי האחרון",
     dataField: 'timeSinceLastChanged',
     dataFormatter: textCell,
-    columnWidth: '15%'
+    columnWidth: '20%',
+    sortFunction: sortNumberByField.bind(null, 'timeSinceLastChangedInHours')
   },
   {
     name: "סטטוס",
     dataField: 'status',
     dataFormatter: statusCell,
-    columnWidth: '70px'
+    columnWidth: '84px' // todo: sort by hebrew name
   }
 ];
 

@@ -12,6 +12,7 @@ const DolevSchema = new Schema({
   lastModified: { type: String, default: '' },
   lastModifier: { type: String, default: '' },
   content: { type: String, default: '' },
+  quantity: { type: Number, default: '' },
   lastFarmerName: { type: String, default: '' },
   status: { type: Number, default: 0 },
 });

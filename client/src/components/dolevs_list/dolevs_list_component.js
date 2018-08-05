@@ -31,6 +31,7 @@ const prepareRawDolevToDisplay = dolev => ({
   content: dolev.content,
   status: dolev.status,
   timeSinceLastChanged: getLiteralDescriptionOfTimeDuration((new Date() - new Date(dolev.lastModified)) / (60 * 1000)),
+  timeSinceLastChangedInHours: (new Date() - new Date(dolev.lastModified)) / (60 * 1000),
 });
 
 const tableColumn = column => (
@@ -41,9 +42,11 @@ const tableColumn = column => (
     width={column.columnWidth}
     dataField={column.dataField}
     dataFormat={column.dataFormatter}
+    sortFunc={column.sortFunction}
     columnClassName={`${CLASS_NAME}__td`}
     className={`${CLASS_NAME}__th`}
-  >
+    headerAlign='right'
+    dataAlign='right'>
     <div className={COLUMN_HEADER_CLASS_NAME}>
       <div>{column.name}</div>
     </div>
@@ -51,7 +54,6 @@ const tableColumn = column => (
 );
 
 const DolevsList = ({ dolevs, statusFilter }) => {
-  console.log('statusFilter =', statusFilter);
   const displayableDolevs = dolevs
     .map(prepareRawDolevToDisplay)
     .filter(dolev => (Number.isInteger(statusFilter) ? dolev.status === statusFilter : true));
