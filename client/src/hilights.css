@@ -1,0 +1,57 @@
+.Highlight {
+    height: 60px;
+    width: 400px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.hilights-block {
+    background-color: #FFFFFF;
+    direction: rtl;
+}
+
+.hilights-description {
+    display: inline-block;
+    background-color: #FFFFFF;
+    direction: rtl;
+}
+
+.fridge {
+    display: block;
+    text-indent: -9999px;
+    background: url('fridge.svg');
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    margin-left: 15px;
+}
+
+.wheat {
+    display: block;
+    text-indent: -9999px;
+    background: url('wheat.svg');
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    margin-left: 15px;
+}
+
+.dolev {
+    display: block;
+    text-indent: -9999px;
+    background: url('dolev.svg');
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    margin-left: 15px;
+}
+
+.amuta {
+    display: block;
+    text-indent: -9999px;
+    background: url('amuta.svg');
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    margin-left: 15px;
+}
