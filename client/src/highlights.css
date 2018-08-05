@@ -55,3 +55,37 @@
     background-size: 48px 48px;
     margin-left: 15px;
 }
+
+
+.dolevs-list__status-num {
+    border-radius: 20px;
+    height: 25px;
+    width: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ready */
+.dolevs-list__status-num--dolev {
+    background-color: rgba(68,188,103,0.26);
+    color: #01CC74;
+}
+
+/* in field */
+.dolevs-list__status-num--wheat {
+    background-color: rgba(255,139,50,0.25);
+    color: #FF8300;
+}
+
+/* in fridge */
+.dolevs-list__status-num--fridge {
+    background-color: rgba(75,186,250,0.25);
+    color: #25B3FD;
+}
+
+/* in association */
+.dolevs-list__status-num--amuta {
+    background-color: rgba(243,67,238,0.25);
+    color: #FF00EA;
+}
