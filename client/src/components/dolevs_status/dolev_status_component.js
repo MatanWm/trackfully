@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CLASS_NAME = 'dolevs-status';
-const ProgressBar
+
 const DolevsStatus = ({ dolevs }) => (
   <div className={`${CLASS_NAME} col-lg-3`}>
     {dolevs.map((dolev, index) => (
@@ -11,4 +11,3 @@ const DolevsStatus = ({ dolevs }) => (
 );
 
 export default DolevsStatus;
- 

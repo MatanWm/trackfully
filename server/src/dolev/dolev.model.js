@@ -1,54 +1,24 @@
+const mongoose = require('mongoose');
 
-/*!
- * Module dependencies
- */
+mongoose.connect(
+  'mongodb://mongodb:27017/trackfully',
+  { useNewUrlParser: true },
+);
 
-var mongoose = require('mongoose');
-var userPlugin = require('mongoose-user');
-var Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
-/**
- * User schema
- */
-
-var UserSchema = new Schema({
-  name: { type: String, default: '' },
-  email: { type: String, default: '' },
-  hashed_password: { type: String, default: '' },
-  salt: { type: String, default: '' }
+const DolevStatusSchema = new Schema({
+  from: { type: String, default: '' },
+  to: { type: String, default: '' },
 });
 
-/**
- * User plugin
- */
-
-UserSchema.plugin(userPlugin, {});
-
-/**
- * Add your
- * - pre-save hooks
- * - validations
- * - virtuals
- */
-
-/**
- * Methods
- */
-
-UserSchema.method({
-
+const DolevSchema = new Schema({
+  id: { type: String, default: '' },
+  lastModified: { type: String, default: '' },
+  lastModifier: { type: String, default: '' },
+  content: { type: String, default: '' },
+  lastFarmerName: { type: String, default: '' },
+  status: { type: Object, default: {} },
 });
 
-/**
- * Statics
- */
-
-UserSchema.static({
-
-});
-
-/**
- * Register
- */
-
-mongoose.model('User', UserSchema);
+module.exports = mongoose.model('Dolev', DolevSchema);
