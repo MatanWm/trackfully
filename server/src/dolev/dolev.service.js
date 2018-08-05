@@ -1,7 +1,7 @@
 class DolevService {
   static async getDolevById(dolevId) {
     return Promise.resolve({
-      dolevId: 'matan7'
+      dolevId: 'matan7',
     });
   }
 
@@ -9,7 +9,6 @@ class DolevService {
     return Promise.resolve(allDolevs);
   }
 }
-
 
 const allDolevs = [
   {
@@ -21,8 +20,9 @@ const allDolevs = [
     lastFarmerName: 'srulik',
     status: 0,
     location: {
-      lat: 0, lng: 0
-    }
+      lat: 0,
+      lng: 0,
+    },
   },
   {
     id: 2,
@@ -33,7 +33,8 @@ const allDolevs = [
     lastFarmerName: 'srulik',
     status: 0,
     location: {
-      lat: 0, lng: 0
+      lat: 0,
+      lng: 0,
     },
   },
   {
@@ -45,9 +46,10 @@ const allDolevs = [
     lastFarmerName: 'srulik',
     status: 1,
     location: {
-      lat: 0, lng: 0
+      lat: 0,
+      lng: 0,
     },
-  }
+  },
 ];
 
 const statuses = {
@@ -59,9 +61,7 @@ const statuses = {
   5: 'afterRouting',
   6: 'inFridge',
   7: 'onTheWayToAssociation',
-  8: 'ArrivedToAssociation'
-}
-
-
+  8: 'ArrivedToAssociation',
+};
 
 module.exports = DolevService;

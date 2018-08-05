@@ -1,4 +1,4 @@
-'use strict';
+
 
 const express = require('express');
 const path = require('path');
@@ -18,21 +18,10 @@ app.use(cors());
 // Static files
 app.use(express.static(CLIENT_BUILD_PATH));
 
-// API
-app.get('/api', (req, res) => {
-  res.set('Content-Type', 'application/json'); 
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-
-  let data = {
-    message: 'Hello world, Woooooeeeee!!!!'
-  };
-  res.send(JSON.stringify(data, null, 2));
-});
 app.use('/api', routes);
 
 // All remaining requests return the React app, so it can handle routing.
-app.get('*', function(request, response) {
+app.get('*', (request, response) => {
   response.sendFile(path.join(CLIENT_BUILD_PATH, 'index.html'));
 });
 
