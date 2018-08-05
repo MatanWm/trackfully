@@ -40,7 +40,8 @@ class DashboardPage extends React.Component {
   }
 
   onHighlightClick(status) {
-    this.setState({ statusFilter: status });
+    const newStatusFilter = this.state.statusFilter !== status ? status : null;
+    this.setState({ statusFilter: newStatusFilter });
   }
 
   render() {
@@ -52,6 +53,7 @@ class DashboardPage extends React.Component {
         <Header />
         <DashboardHighlights
           class={'col-lg-12'}
+          clickedStatus = {statusFilter}
           dolevs={dolevs}
           onHighlightClick={this.onHighlightClick.bind(this)}
         />

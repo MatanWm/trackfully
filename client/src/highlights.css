@@ -1,8 +1,9 @@
 .Highlight {
     height: 60px;
-    width: 400px;
+    width: 200px;
     display: inline-flex;
     cursor: pointer;
+    margin-left: 200px;
 }
 
 .hilights-block {
@@ -19,41 +20,45 @@
 .fridge {
     display: block;
     text-indent: -9999px;
-    background: url('fridge.svg');
+    background: url('assets/status/fridge.svg');
     width: 48px;
     height: 48px;
     background-size: 48px 48px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 .wheat {
     display: block;
     text-indent: -9999px;
-    background: url('wheat.svg');
+    background: url('assets/status/wheat.svg');
     width: 48px;
     height: 48px;
     background-size: 48px 48px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 .dolev {
     display: block;
     text-indent: -9999px;
-    background: url('dolev.svg');
+    background: url('assets/status/dolev.svg');
     width: 48px;
     height: 48px;
     background-size: 48px 48px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 .amuta {
     display: block;
     text-indent: -9999px;
-    background: url('amuta.svg');
+    background: url('assets/status/amuta.svg');
     width: 48px;
     height: 48px;
     background-size: 48px 48px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 
@@ -64,6 +69,12 @@
     text-align: center;
     font-size: 16px;
     font-weight: 600;
+}
+
+.clicked {
+    border-style: outset;
+    border-radius: 20px;
+    border: 2px solid;
 }
 
 /* ready */
