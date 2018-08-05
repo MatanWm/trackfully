@@ -7,6 +7,13 @@ class DolevController {
       .then(data => res.json(data))
       .catch(e => next(e));
   }
+
+  static getAllDolevs(req, res, next) {
+    return dolevService
+      .getAllDolevs()
+      .then(data => res.json(data))
+      .catch(e => next(e));
+  }
 }
 
 module.exports = DolevController;
