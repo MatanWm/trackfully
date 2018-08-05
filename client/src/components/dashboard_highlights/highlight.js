@@ -2,7 +2,7 @@ import React from 'react';
 const Panel = require('react-bootstrap/lib/Panel');
 
 const Highlight = (props) => (
-  <div className='Highlight' onClick={props.handleHighlightClick}>
+  <div className={props.isClicked ? 'Highlight clicked' : 'Highlight'} onClick={props.handleHighlightClick}>
     <div className={props.iconName}></div>
     <div className='hilights-description'>
       <div className='hilights-text'>{props.name}</div>

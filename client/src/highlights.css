@@ -66,6 +66,10 @@
     font-weight: 600;
 }
 
+.clicked {
+    border-style: outset;
+}
+
 /* ready */
 .dolevs-list__status-num--dolev {
     background-color: rgba(68,188,103,0.26);
