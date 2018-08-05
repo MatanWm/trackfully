@@ -17,7 +17,7 @@ app.use(express.static(CLIENT_BUILD_PATH));
 
 // API
 app.get('/api', (req, res) => {
-  res.set('Content-Type', 'application/json');
+  res.set('Content-Type', 'application/json'); 
   let data = {
     message: 'Hello world, Woooooeeeee!!!!'
   };
