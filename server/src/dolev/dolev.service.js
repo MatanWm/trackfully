@@ -21,8 +21,8 @@ class DolevService {
     return DolevModel.find();
   }
 
-  static async updateDolevStatus(dolev, status) {
-    return await DolevModel.updateOne({ id: dolev.id, status: status });
+  static async updateDolevStatus(id, status) {
+    return await DolevModel.updateOne({ id: id, status: status });
   }
 }
 

@@ -9,6 +9,7 @@ class DolevScanner extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+          status: props.match.params.status,  
           success: false,
           delay: 1000,
           dolevId: null
@@ -20,7 +21,7 @@ class DolevScanner extends React.Component {
         return (
             <div className="container">
                 {dolevId ? 
-                (<div className="success-scan success-text">דולב {dolevId} נסרק בהצלחה</div>)
+                (<div className="col-lg-3">דולב {dolevId} נסרק בהצלחה</div>)
                 :
                 (<div>
                     <QrReader
@@ -30,7 +31,7 @@ class DolevScanner extends React.Component {
                     style={{ width: '100%' }}
                     />
                 </div>)
-
+ 
                 }
             </div>
         );
@@ -38,7 +39,7 @@ class DolevScanner extends React.Component {
 
     async handleScan(data){
         if(data){
-            const res = await axios.patch(`http://localhost:8080/api/dolev/${data}`, {status:this.props.status}); 
+            const res = await axios.patch(`http://localhost:8080/api/dolev/${data}`, {status:this.state.status}); 
             this.setState({
                 dolevId: data,
             })

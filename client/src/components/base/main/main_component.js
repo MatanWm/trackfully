@@ -11,7 +11,7 @@ const Main = () => (
       <Route exact path='/' component={DashboardPage}/>
       <Route exact path='/sample' component={DashboardPage}/>
       <Route exact path='/dolev' component={DolevStates}/>
-      <Route exact path='/dolev/scan' component={DolevScanner}/>
+      <Route exact path='/dolev/scan/:status' component={DolevScanner}/>
       <Route exact path='/dolev/:id' component={UpdateDolev}/>
     </Switch>
   </main>
