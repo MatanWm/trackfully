@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const CLASS_NAME = 'dolevs-list';
 
@@ -8,4 +8,4 @@ const DolevsList = () => (
   </div>
 );
 
-export default DolevsList
+export default DolevsList;
