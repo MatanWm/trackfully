@@ -21,7 +21,11 @@ class DolevScanner extends React.Component {
         return (
             <div className="container">
                 {dolevId ? 
-                (<div className="col-lg-3">דולב {dolevId} נסרק בהצלחה</div>)
+                  (
+                    <div className="success-scan"> <span className="glyphicon glyphicon-ok v-icon"></span> דולב
+                     {dolevId}  נסרק בהצלחה
+                    </div>
+                  )
                 :
                 (<div>
                     <QrReader
