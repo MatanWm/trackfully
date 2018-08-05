@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './compiled/App.css';
+import Main from '../main/main_component';
 
-class App extends Component {
+class TrackfullyBackofficeApp extends Component {
   constructor() {
     super();
 
@@ -20,7 +19,7 @@ class App extends Component {
 
     window._resp = resp;
 
-    const text = await resp.text();
+    let text = await resp.text();
 
     let data = null;
     try {
@@ -37,19 +36,14 @@ class App extends Component {
   };
 
   render() {
+    const { message } = this.state;
+    console.log("message =", message);
+    // an example to header component (for navigating between links) cna be found here:
+    // https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Trackfully</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>{this.state.message || 'No message'}</p>
-      </div>
+      <Main />
     );
   }
 }
 
-export default App;
+export default TrackfullyBackofficeApp;
