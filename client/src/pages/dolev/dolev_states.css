@@ -1,14 +1,51 @@
 .dolev-stats {
   text-align: center;
-}
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px;
 
-.list-group-item:hover {
-  background-color: blue;
-  opacity: 0.4;
 }
 
 .truck {
   height: 48px;
   width: 48px;
   background-size: 45px 45px;
+}
+.list-group{
+  width: 90%;
+  margin-top: 25px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.list-item__icon {
+  height: 48px;
+  width: 48px;
+  margin-left: 20px;
+}
+
+.list-item__icon--starting-collection {
+  background: url("../../assets/status/truck.svg");
+}
+
+.list-item__icon--production-collection {
+  background: url("../../assets/status/wheat.svg");
+}
+
+.list-item__icon--cooling {
+  background: url("../../assets/status/fridge.svg");
+}
+
+.list-item__icon--delivering-to-association {
+  background: url("../../assets/status/amuta.svg");
+}
+
+.list-item__icon--tagging-available-dolev {
+  background: url("../../assets/status/dolev.svg");
 }
