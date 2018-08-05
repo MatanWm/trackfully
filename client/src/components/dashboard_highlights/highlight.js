@@ -6,7 +6,7 @@ const Highlight = (props) => (
     <div className={props.iconName}></div>
     <div className='hilights-description'>
       <div className='hilights-text'>{props.name}</div>
-      <span className={`dolevs-list__status-num dolevs-list__status-num--${props.iconName}`}>&emsp;{props.numOfDolevs}&emsp;</span>
+      <span className={`dolevs-list__status-num dolevs-list__status-num--${props.iconName}`}>&emsp;&emsp;{props.numOfDolevs}&emsp;&emsp;</span>
     </div>
   </div>
 );
