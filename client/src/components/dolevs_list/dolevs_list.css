@@ -67,3 +67,36 @@
   background-color: rgba(243,67,238,0.25);
   color: #FF00EA;
 }
+
+.dolevs-list__icon-cell {
+  width: 25px;
+  height: 25px;
+}
+
+.dolevs-list__icon-cell--apple {
+  background: url("../../assets/dolev_contents/content-apple.svg");
+}
+
+.dolevs-list__icon-cell--avocado {
+  background: url("../../assets/dolev_contents/content-avocado.svg");
+}
+
+.dolevs-list__icon-cell--broccoli {
+  background: url("../../assets/dolev_contents/content-broccoli.svg");
+}
+
+.dolevs-list__icon-cell--corn {
+  background: url("../../assets/dolev_contents/content-corn.svg");
+}
+
+.dolevs-list__icon-cell--eggplant {
+  background: url("../../assets/dolev_contents/content-eggplant.svg");
+}
+
+.dolevs-list__icon-cell--mango {
+  background: url("../../assets/dolev_contents/content-mango.svg");
+}
+
+.dolevs-list__icon-cell--not-available {
+  background: url("../../assets/dolev_contents/icon_exception.svg");
+}
