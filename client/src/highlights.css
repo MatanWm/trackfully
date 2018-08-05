@@ -1,0 +1,102 @@
+.Highlight {
+    height: 60px;
+    width: 200px;
+    display: inline-flex;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.hilights-block {
+    background-color: #FFFFFF;
+    direction: rtl;
+}
+
+.hilights-description {
+    display: inline-block;
+    background-color: #FFFFFF;
+    direction: rtl;
+}
+
+.fridge {
+    display: block;
+    text-indent: -9999px;
+    background: url('assets/status/fridge.svg');
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.wheat {
+    display: block;
+    text-indent: -9999px;
+    background: url('assets/status/wheat.svg');
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.dolev {
+    display: block;
+    text-indent: -9999px;
+    background: url('assets/status/dolev.svg');
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.amuta {
+    display: block;
+    text-indent: -9999px;
+    background: url('assets/status/amuta.svg');
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.dolevs-list__status-num {
+    border-radius: 20px;
+    height: 25px;
+    width: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.clicked {
+    border-style: outset;
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+/* ready */
+.dolevs-list__status-num--dolev {
+    background-color: rgba(68,188,103,0.26);
+    color: #01CC74;
+}
+
+/* in field */
+.dolevs-list__status-num--wheat {
+    background-color: rgba(255,139,50,0.25);
+    color: #FF8300;
+}
+
+/* in fridge */
+.dolevs-list__status-num--fridge {
+    background-color: rgba(75,186,250,0.25);
+    color: #25B3FD;
+}
+
+/* in association */
+.dolevs-list__status-num--amuta {
+    background-color: rgba(243,67,238,0.25);
+    color: #FF00EA;
+}

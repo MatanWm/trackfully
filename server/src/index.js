@@ -4,6 +4,8 @@ const routes = require('./routes');
 const cors = require('cors');
 const DolevModel = require('./dolev/dolev.model');
 const DolevMocks = require('./dolev/dolev.mocks');
+var bodyParser = require('body-parser');
+
 
 // Constants
 const PORT = process.env.PORT || 8080;
@@ -13,10 +15,12 @@ const CLIENT_BUILD_PATH = path.join(__dirname, '../../client/build');
 
 // App
 const app = express();
+app.use(bodyParser());
 
 app.use(cors());
 
 app.use(express.static(CLIENT_BUILD_PATH));
+
 
 // Db reset
 app.use('/dbreset', async (req, res) => {
