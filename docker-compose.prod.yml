@@ -8,7 +8,7 @@ services:
     # env_file: ./server/.env # TODO - uncomment this to auto-load your .env file!
     environment:
       NODE_ENV: production
-      PORT: 8080
+      PORT: 8000
   mongodb:
     image: mongo:latest
     container_name: "mongodb"
