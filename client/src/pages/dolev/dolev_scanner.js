@@ -23,8 +23,7 @@ class DolevScanner extends React.Component {
           <div>
             <div className="success-scan">
               {' '}
-              <span className="glyphicon glyphicon-ok v-icon" /> דולב
-              {dolevId} נסרק בהצלחה
+              <span className="glyphicon glyphicon-ok v-icon" /> דולב {dolevId} נסרק בהצלחה
             </div>
             <div id="wrapper">
               <button className="btn btn-default btn-lg  return-button">
