@@ -20,7 +20,7 @@ const DolevStates = () => (
         </Link>
       </li>
       <li className="list-group-item">
-        <Link to="dolev/scan/2">
+        <Link to="dolev/scan/1">
           <div className={LIST_ITEM_CLASS_NAME}>
             <div className={`${LIST_ITEM_ICON_CLASS_NAME} ${LIST_ITEM_ICON_CLASS_NAME}--production-collection`}/>
             <div>איסוף תוצרת</div>
@@ -28,7 +28,7 @@ const DolevStates = () => (
         </Link>
       </li>
       <li className="list-group-item">
-        <Link to="dolev/scan/3">
+        <Link to="dolev/scan/6">
           <div className={LIST_ITEM_CLASS_NAME}>
             <div className={`${LIST_ITEM_ICON_CLASS_NAME} ${LIST_ITEM_ICON_CLASS_NAME}--cooling`}/>
             <div>אכסון וקירור</div>
@@ -36,7 +36,7 @@ const DolevStates = () => (
         </Link>
       </li>
       <li className="list-group-item">
-        <Link to="dolev/scan/4">
+        <Link to="dolev/scan/8">
           <div className={LIST_ITEM_CLASS_NAME}>
             <div className={`${LIST_ITEM_ICON_CLASS_NAME} ${LIST_ITEM_ICON_CLASS_NAME}--delivering-to-association`}/>
             <div>מסירה לעמותה</div>
@@ -44,7 +44,7 @@ const DolevStates = () => (
         </Link>
       </li>
       <li className="list-group-item">
-        <Link to="dolev/scan/5">
+        <Link to="dolev/scan/0">
           <div className={LIST_ITEM_CLASS_NAME}>
             <div className={`${LIST_ITEM_ICON_CLASS_NAME} ${LIST_ITEM_ICON_CLASS_NAME}--tagging-available-dolev`}/>
             <div>סימון דולב פנוי</div>
