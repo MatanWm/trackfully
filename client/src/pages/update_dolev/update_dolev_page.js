@@ -11,7 +11,7 @@ class DashboardPage extends React.Component {
   }
 
   onSubmit() {
-    axios.get('http://localhost:8080/api/dolev').then((res) => {
+    axios.get('http://trackfully.westeurope.cloudapp.azure.com:8080/api/dolev').then((res) => {
       const dolevs = res.data;
       this.setState({ dolevs });
     });
