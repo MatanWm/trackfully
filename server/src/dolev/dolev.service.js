@@ -22,7 +22,7 @@ class DolevService {
   }
 
   static updateDolevStatus(id, status) {
-    return DolevModel.update({ id }, { status });
+    return DolevModel.update({ id }, { status, lastModified: new Date() });
   }
 }
 

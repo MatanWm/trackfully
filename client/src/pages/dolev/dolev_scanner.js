@@ -26,9 +26,9 @@ class DolevScanner extends React.Component {
               <span className="glyphicon glyphicon-ok v-icon" /> דולב {dolevId} נסרק בהצלחה
             </div>
             <div id="wrapper">
-              <button className="btn btn-default btn-lg  return-button">
-                <Link to="/dolev">חזור</Link>
-              </button>
+              <Link to="/dolev">
+                <button className="btn btn-default btn-lg  return-button">חזור</button>
+              </Link>
             </div>
           </div>
         ) : (
