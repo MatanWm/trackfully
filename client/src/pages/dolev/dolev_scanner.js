@@ -47,7 +47,7 @@ class DolevScanner extends React.Component {
 
   async handleScan(data) {
     if (data) {
-      const res = await axios.patch(`http://localhost:8080/api/dolev/${data}`, {
+      const res = await axios.patch(`http://trackfully.westeurope.cloudapp.azure.com:8080/api/dolev/${data}`, {
         status: this.state.status,
       });
       this.setState({

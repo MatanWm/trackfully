@@ -25,7 +25,7 @@ class UpdateDolev extends React.Component {
   }
   componentDidMount() {
     axios
-      .get(`http://localhost:8080/api/dolev/${this.state.location}`)
+      .get(`http://trackfully.westeurope.cloudapp.azure.com:8080/api/dolev/${this.state.location}`)
       .then((response) => {
         this.setState({
           dolveId: response.data.dolevId,
