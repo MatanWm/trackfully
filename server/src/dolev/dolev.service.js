@@ -22,7 +22,12 @@ class DolevService {
   }
 
   static updateDolevStatus(id, status) {
-    return DolevModel.update({ id }, { status, lastModified: new Date() });
+    let newDolev = { status, lastModified: new Date() };
+    // mock for demo
+    if (status === '6') {
+      newDolev = Object.assign({}, newDolev, { content: 'banana' })
+    }
+    return DolevModel.update({ id }, newDolev);
   }
 }
 

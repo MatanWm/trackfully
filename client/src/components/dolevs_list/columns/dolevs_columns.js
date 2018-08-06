@@ -15,6 +15,7 @@ const DOLEV_STATUSES = {
 const CONTENT_TRANSLATION = {
   'apple': 'תפוחים',
   'avocado': 'אבוקדו',
+  'banana': 'בננות',
   'broccoli': 'ברוקולו',
   'corn': 'תירס',
   'eggplant': 'חצילים',

@@ -81,6 +81,10 @@
   background: url("../../assets/dolev_contents/content-avocado.svg");
 }
 
+.dolevs-list__icon-cell--banana {
+  background: url("../../assets/dolev_contents/content-banana.svg");
+}
+
 .dolevs-list__icon-cell--broccoli {
   background: url("../../assets/dolev_contents/content-broccoli.svg");
 }
